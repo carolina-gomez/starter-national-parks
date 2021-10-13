@@ -125,3 +125,36 @@ const main = document.querySelector("main")
 //Remove that park
 main.removeChild(park)
 */
+
+
+
+
+
+/* EVENT LISTENERS */
+
+//select the first button on the page
+const firstBtn = document.querySelector("button");
+
+//addEVentListener()
+firstBtn.addEventListener("click", (event) => {
+    console.log("You clicked the button", event);
+    //use info contained while handling the event.
+    //print which button we just clicked
+    console.log(event.target);
+})
+
+//handle multiple elements
+//Select all the buttons for all the parks
+const allBtns = deocument.querySelectorAll(".rate-button");
+
+//Itereate thrrough the list of buttons and add an event handler to each.
+allBtns.forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+        console.log(event.target)
+        //print the park that belongs to each button
+        console.log(event.target.parentNode)
+        //highlight the background of the park selected
+        const park = event.target.parentNode
+        park.style.backgroundColor = "#c8e6c9"
+    })
+})
