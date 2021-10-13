@@ -81,9 +81,16 @@ const ratings = document.querySelectorAll(".rating-display .value")
 for (let rating of ratings) {
     let ratingValue = parseFloat(rating.innerText);
 
-    if (ratingValue > 4.7) {
-        rating.style.fontWeight = "bold";
-        rating.style.color = "#3ba17c"
+    //add properties with javascript
+    // if (ratingValue > 4.7) {
+    //     rating.style.fontWeight = "bold";
+    //     rating.style.color = "#3ba17c"
+    // }
+
+    //using classList property to edit
+    if(ratingValue > 4.7) {
+        rating.classList.add("high-rating");
+        rating.classList.remove("value")
     }
 }
 
