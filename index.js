@@ -1,4 +1,7 @@
-// select elements on DOM
+
+/*
+// SELECT ELEMENTS ON THE DOM
+
 const value = document.querySelector(".park-display");
 console.log(value)
 
@@ -36,3 +39,31 @@ for (let i = 0; i < divsAreas.length; i++) {
     const element = divsAreas[i]
     console.log(element)
 }
+*/
+
+
+
+/*
+UPDATING THE DOM
+*/
+
+/*
+Log each description
+truncate the text to 250 character and add ellipses if they are longer thatn that.
+use the slice()
+*/
+
+const descriptions = document.querySelectorAll(".description-display")
+
+for (let desc of descriptions.values()) {
+    let content = desc.innerText;
+
+    if (content.length > 250) {
+        content = content.slice(0, 250);
+        content = content + "...";
+    }
+
+    console.log(content)
+}
+
+
