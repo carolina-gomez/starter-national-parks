@@ -114,6 +114,12 @@ main {
   text-align: center;
 }
 
+/*Add style for create element exercise*/
+.header-statement {
+  color: white;
+  font-size: 1.2 rem;
+}
+
 
 @media screen and (min-width: 600px) {
   main {

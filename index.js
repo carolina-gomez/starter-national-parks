@@ -94,4 +94,19 @@ for (let rating of ratings) {
     }
 }
 
+/* 
+Creaating DOM elements
+the createElement() method creates a new elements with given tag name
+After creating the element, add it to the page using appendchild()
+*/
 
+const parks = document.querySelectorAll(".park-display");
+const numberParks = parks.length;
+//create the element
+const newElement = document.createElement("div")
+newElement.innerText = `${numberParks} exciting parks to visit`;
+//add class to the new element
+newElement.classList.add("header-statement");
+//add element to the page on the header
+const header = document.querySelector("header");
+header.appendChild(newElement);
