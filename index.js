@@ -60,10 +60,15 @@ for (let desc of descriptions.values()) {
 
     if (content.length > 250) {
         content = content.slice(0, 250);
-        content = content + "...";
+        content = content + `<a href="#">...</a>`;
     }
 
     console.log(content)
+
+    //Update the HTMLElement
+    //use .innerHTML
+    // use .innerHTML instead of .innerText so ellipses displays correctly
+    desc.innerHTML = content;
 }
 
 
