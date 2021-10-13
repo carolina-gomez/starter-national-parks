@@ -71,4 +71,20 @@ for (let desc of descriptions.values()) {
     desc.innerHTML = content;
 }
 
+/*
+Changing the style
+bold and green rating values greater thatn 4.7
+*/
+
+const ratings = document.querySelectorAll(".rating-display .value")
+
+for (let rating of ratings) {
+    let ratingValue = parseFloat(rating.innerText);
+
+    if (ratingValue > 4.7) {
+        rating.style.fontWeight = "bold";
+        rating.style.color = "#3ba17c"
+    }
+}
+
 
