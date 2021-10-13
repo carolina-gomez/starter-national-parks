@@ -110,3 +110,18 @@ newElement.classList.add("header-statement");
 //add element to the page on the header
 const header = document.querySelector("header");
 header.appendChild(newElement);
+
+/*
+Removing DOM elements
+select the first park on the page and remove it,
+as demonstrated here:
+
+//Get the parent element of all parks
+const main = document.querySelector("main")
+
+//select a single park
+/const park = main.querySelector(".park-display");
+
+//Remove that park
+main.removeChild(park)
+*/
