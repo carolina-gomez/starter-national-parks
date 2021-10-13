@@ -14,3 +14,8 @@ console.log(button)
 
  const findHello = document.querySelector(".hello")
  console.log(findHello)
+
+ //find all <button> elements on the page
+ const buttons = document.querySelectorAll("button")
+ console.log(buttons)
+
