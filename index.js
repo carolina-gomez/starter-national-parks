@@ -146,7 +146,6 @@ firstBtn.addEventListener("click", (event) => {
 //handle multiple elements
 //Select all the buttons for all the parks
 const allBtns = deocument.querySelectorAll(".rate-button");
-
 //Itereate thrrough the list of buttons and add an event handler to each.
 allBtns.forEach((btn) => {
     btn.addEventListener("click", (event) => {
@@ -158,3 +157,9 @@ allBtns.forEach((btn) => {
         park.style.backgroundColor = "#c8e6c9"
     })
 })
+
+//A complete example
+// give ability to sort the list of parks displayed on the page
+//sort by either name or rating
+//add two links and allow the user to click whichever one they wish
+//get list of parks from the DOM, perform a sort and insert the parks back into DOM
